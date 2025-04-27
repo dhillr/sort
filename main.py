@@ -16,7 +16,7 @@ class Sort:
     def get(self): return self.arr
 
 def sort(arr: list) -> Sort:
-    digits = math.ceil(math.log10(max(arr)) + 1)
+    digits = math.floor(math.log10(max(arr)) + 1)
     vals = [arr]
 
     for d in range(digits):
